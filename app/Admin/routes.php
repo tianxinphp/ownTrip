@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Routing\Router;
-
 Admin::routes();
 
 Route::group([
@@ -12,4 +11,7 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('admin.home');
 
+    $router->get('continents','ContinentsController@index');
+
+    $router->resource('countries',CountriesController::Class);
 });

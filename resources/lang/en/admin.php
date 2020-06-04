@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'Home'                  => '首页',
     'online'                => 'Online',
     'login'                 => 'Login',
     'logout'                => 'Logout',
